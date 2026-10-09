@@ -14,6 +14,16 @@
 \usepackage{cite}
 \usepackage{caption}
 \usepackage{setspace}
+\usepackage{float}
+
+% Float placement parameters to prevent figure deferral and balance layout
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.15}
+\renewcommand{\floatpagefraction}{0.8}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{3}
+\setcounter{totalnumber}{5}
 
 \setstretch{1.15}
 
@@ -65,7 +75,7 @@ The remainder of this manuscript is structured as follows: Section 2 surveys rel
 
 Sustainable hospitality and customer-centric housekeeping operations have been explored across four distinct literature streams, as summarized in Table~\ref{tab:literature_review_matrix}.
 
-\begin{table*}[t]
+\begin{table}[!htbp]
 \centering
 \small
 \caption{Comparative review of research streams addressing guest sentiment, sustainable hotel operations, and technology adoption.}
@@ -95,7 +105,7 @@ Integrates domain-specific ABSA, K-Means segmentation, calibrated ML resource re
 Pilot survey sample requires expanded multi-property replication; resolves previous limitations by quantifying verified resource and carbon abatement. \\
 \bottomrule
 \end{tabularx}
-\end{table*}
+\end{table}
 
 \subsection{Guest Review Mining and Aspect-Based Sentiment Analysis}
 Customer-generated online reviews represent a critical information channel in modern hospitality management \cite{xiang2015}. Early text mining research established that room cleanliness, bathroom functionality, and linen hygiene are the most frequent drivers of negative customer reviews on platforms like TripAdvisor and Booking.com \cite{berezina2015,min2015}. General-purpose sentiment lexicons, such as VADER \cite{hutto2014}, assign aggregate valence scores but fail to isolate domain-specific operational aspects. For instance, a review stating ``The room was spotless but the cleaning staff knocked loudly at 8:00 AM'' yields mixed aggregate sentiment while obscuring the specific operational failure in service timing \cite{xiang2015}. Consequently, domain-adapted aspect-based classification using Support Vector Machines and term frequency representations is essential for operational diagnostic utility \cite{joachims1998}.
@@ -111,14 +121,7 @@ The fourth stream investigates technology adoption and organizational behavior i
 
 \section{METHODOLOGY}
 
-The EcoHouse-AI architecture comprises three analytical modules: (1) Aspect-Based Sentiment Analysis and Guest Segmentation, (2) Calibrated Environmental Resource Modeling and Carbon Accounting, and (3) TAM/UTAUT Technology Adoption Empirical Governance. The system workflow is depicted in Figure~\ref{fig:aspect_radar}.
-
-\begin{figure*}[t]
-\centering
-\includegraphics[width=0.95\textwidth]{figure4_aspect_sentiment_radar.pdf}
-\caption{Guest intelligence and aspect-based sentiment framework: (a) Housekeeping aspect polarity distribution across 20,491 reviews; (b) Radar profile illustrating attribute sensitivities across the four K-Means guest segments.}
-\label{fig:aspect_radar}
-\end{figure*}
+The EcoHouse-AI architecture comprises three analytical modules: (1) Aspect-Based Sentiment Analysis and Guest Segmentation, (2) Calibrated Environmental Resource Modeling and Carbon Accounting, and (3) TAM/UTAUT Technology Adoption Empirical Governance. The empirical guest sentiment profiles, building physics models, and adoption barrier hierarchies are evaluated in Section~\ref{sec:results} (Figures~\ref{fig:aspect_radar}--\ref{fig:tam_hierarchy}).
 
 \subsection{Aspect-Based Sentiment Mining and Segmentation Pipeline}
 We utilize the empirical TripAdvisor Hotel Review Corpus comprising 20,491 guest reviews. Each review text $d \in \mathcal{D}$ is processed using regularized text cleaning and tokenization. 
@@ -198,12 +201,12 @@ To rank organizational bottlenecks, we calculate the Relative Importance Index (
 \end{equation}
 where $W$ is the assigned weight, $A = 5$ is the maximum scale value, and $N = 32$ is sample size, categorizing barriers into Tier 1 (Severe, $\text{RII} \ge 0.80$), Tier 2 (Moderate, $0.70 \le \text{RII} < 0.80$), and Tier 3 (Minor, $\text{RII} < 0.70$).
 
-\section{RESULTS AND ANALYSIS}
+\section{RESULTS AND ANALYSIS}\label{sec:results}
 
 \subsection{Aspect Sentiment Classification and Polarity Analysis}
 Table~\ref{tab:nlp_sentiment_benchmark} presents classification metrics comparing the rule-based VADER lexicon baseline against the supervised TF-IDF LinearSVC model across 4,099 out-of-sample test reviews.
 
-\begin{table}[h]
+\begin{table}[!htbp]
 \centering
 \caption{NLP sentiment classification performance on TripAdvisor review holdout test set ($n=4{,}099$).}
 \label{tab:nlp_sentiment_benchmark}
@@ -221,7 +224,7 @@ Supervised TF-IDF LinearSVC & \textbf{0.8568} & \textbf{0.6844} & \textbf{0.6844
 
 As shown in Table~\ref{tab:nlp_sentiment_benchmark}, supervised LinearSVC substantially outperforms the lexicon baseline, boosting Macro-F1 from 0.4700 to 0.6844 (+45.62\%) and overall accuracy from 77.24\% to 85.68\%. VADER suffers from severe recall failure on neutral and moderately negative reviews, misclassifying subtle operational complaints containing positive polite markers (e.g., ``The maid was very nice, but our towels were damp'').
 
-Granular aspect polarity analysis reveals that all five housekeeping dimensions carry negative mean valence across customer mentions:
+Granular aspect polarity analysis reveals that all five housekeeping dimensions carry negative mean valence across customer mentions (Figure~\ref{fig:aspect_radar}(a)):
 \begin{itemize}
     \item \textbf{Cleanliness \& Dust:} Mean Polarity = $-0.1818$
     \item \textbf{Bathroom \& Plumbing:} Mean Polarity = $-0.1825$
@@ -232,9 +235,9 @@ Granular aspect polarity analysis reveals that all five housekeeping dimensions 
 Promptness and service timing represent the sharpest source of negative sentiment ($-0.2628$). Guests exhibit high sensitivity to delayed check-in turnovers and early-morning attendant knock interruptions, validating the urgent need for sequence-aware scheduling.
 
 \subsection{K-Means Persona Discovery and Personalization Matrix}
-Table~\ref{tab:guest_segment_profiles} outlines the empirical characteristics of the four discovered customer segments ($K=4$, Silhouette score = 0.2416).
+Table~\ref{tab:guest_segment_profiles} outlines the empirical characteristics of the four discovered customer segments ($K=4$, Silhouette score = 0.2416). As illustrated in Figure~\ref{fig:aspect_radar}(b), the four personas diverge across operational sensitivity dimensions: Eco-Conscious Minimalists prioritize linen conservation, Business travelers prioritize rapid turnaround, while Luxury cohorts demand intensive touchpoints.
 
-\begin{table*}[t]
+\begin{table}[!htbp]
 \centering
 \small
 \caption{Empirical customer segment profiles and operational sensitivity attributes derived from K-Means clustering ($N=14{,}937$).}
@@ -251,11 +254,18 @@ Luxury High-Touch & 22.2\% & 3,323 & 4.37 & 0.00 & 0.44 & 0.74 \\
 \bottomrule
 \end{tabular}%
 }
-\end{table*}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.72\textwidth,keepaspectratio]{figure4_aspect_sentiment_radar.pdf}
+\caption{Guest intelligence and aspect-based sentiment framework: (a) Housekeeping aspect polarity distribution across 20,491 reviews; (b) Radar profile illustrating attribute sensitivities across the four K-Means guest segments.}
+\label{fig:aspect_radar}
+\end{figure}
 
 Table~\ref{tab:personalization_rules} details the resulting operational housekeeping policy tailored to each customer segment.
 
-\begin{table*}[t]
+\begin{table}[!htbp]
 \centering
 \small
 \caption{Dynamic personalization rule matrix mapping guest segments to operational housekeeping policies and resource impact.}
@@ -273,21 +283,14 @@ Table~\ref{tab:personalization_rules} details the resulting operational housekee
 \textbf{Luxury High-Touch} & Twice Daily (Morning Clean + Evening Turndown) & Complete daily turnover of all linens and plush bathrobes. & Premium Intensity ($+18\%$ above baseline). & Immediate SLA (Zero delay tolerance) \\
 \bottomrule
 \end{tabularx}
-\end{table*}
+\end{table}
 
 By shifting Eco-Conscious Minimalists (17.1\%) and Business Travelers (34.0\%) to opt-out or express stayovers, properties eliminate unrequested daily laundry loads without degrading customer ratings.
-
-\begin{figure*}[t]
-\centering
-\includegraphics[width=0.95\textwidth]{figure5_carbon_resource_abatement.pdf}
-\caption{Environmental conservation and carbon abatement ledger for a 120-room hotel: (a) Annual electricity and water consumption comparing baseline vs. AI-optimized eco-housekeeping; (b) Net avoided greenhouse gas emissions in India and United States.}
-\label{fig:carbon_ledger}
-\end{figure*}
 
 \subsection{Building Energy ML Regression and Carbon Abatement Ledger}
 Table~\ref{tab:energy_regression_results} evaluates multivariate regression models predicting hotel site EUI (kBtu/sqft) on the holdout test set ($n=50$ properties).
 
-\begin{table}[h]
+\begin{table}[!htbp]
 \centering
 \caption{Machine learning regression benchmarks for hotel site Energy Use Intensity (EUI, kBtu/sqft).}
 \label{tab:energy_regression_results}
@@ -306,7 +309,7 @@ Random Forest achieves the lowest prediction error ($\text{MAE} = 8.98$ kBtu/sqf
 
 Table~\ref{tab:carbon_abatement_ledger} and Figure~\ref{fig:carbon_ledger} present the quantified annual resource and emissions savings achieved by deploying EcoHouse-AI across a standard 120-room property operating at 73.7\% average annual occupancy.
 
-\begin{table*}[t]
+\begin{table}[!htbp]
 \centering
 \caption{Annual resource conservation and carbon abatement ledger for a standard 120-room commercial hotel.}
 \label{tab:carbon_abatement_ledger}
@@ -322,21 +325,21 @@ US Grid Emissions (Tonnes $\text{CO}_2\text{e}$) & 244.70 MT & 216.66 MT & \text
 \bottomrule
 \end{tabular}%
 }
-\end{table*}
+\end{table}
 
 EcoHouse-AI conserves 70,578 kWh of electricity annually (a 12.10\% reduction) through automated 2°C HVAC setbacks and reduced water-heating electricity. Water consumption drops by 476,824 liters annually (a 4.32\% reduction) via targeted linen stayover opt-outs. Converted using official grid emission factors, this abates \textbf{51.40 metric tonnes of $\text{CO}_2\text{e}$} annually in India \cite{cea2024} and \textbf{28.04 metric tonnes} in the United States \cite{epa2024}.
 
-\begin{figure*}[t]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{figure6_tam_barrier_hierarchy.pdf}
-\caption{Technology Acceptance Model (TAM) adoption governance: (a) Construct mean ratings across 32 hospitality leadership respondents; (b) Relative Importance Index (RII) barrier ranking across Criticality Tiers 1, 2, and 3.}
-\label{fig:tam_hierarchy}
-\end{figure*}
+\includegraphics[width=0.88\textwidth,keepaspectratio]{figure5_carbon_resource_abatement.pdf}
+\caption{Environmental conservation and carbon abatement ledger for a 120-room hotel: (a) Annual electricity and water consumption comparing baseline vs. AI-optimized eco-housekeeping; (b) Net avoided greenhouse gas emissions in India and United States.}
+\label{fig:carbon_ledger}
+\end{figure}
 
 \subsection{TAM/UTAUT Adoption Barriers and Governance Mitigations}
 Table~\ref{tab:tam_psychometric_reliability} reports construct mean ratings, standard deviations, and Cronbach's alpha internal consistency coefficients across $N=32$ survey respondents.
 
-\begin{table}[h]
+\begin{table}[!htbp]
 \centering
 \small
 \caption{TAM/UTAUT construct psychometric evaluation across hospitality executives ($N=32$).}
@@ -358,7 +361,7 @@ Hospitality leaders assign high ratings to Perceived Usefulness ($\mu = 4.18$), 
 
 Table~\ref{tab:adoption_barrier_ranking} details the Relative Importance Index (RII) ranking of specific adoption roadblocks.
 
-\begin{table*}[t]
+\begin{table}[!htbp]
 \centering
 \small
 \caption{Adoption barrier hierarchy prioritized via Relative Importance Index (RII) across $N=32$ respondents.}
@@ -377,11 +380,18 @@ Table~\ref{tab:adoption_barrier_ranking} details the Relative Importance Index (
 \bottomrule
 \end{tabular}%
 }
-\end{table*}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth,keepaspectratio]{figure6_tam_barrier_hierarchy.pdf}
+\caption{Technology Acceptance Model (TAM) adoption governance: (a) Construct mean ratings across 32 hospitality leadership respondents; (b) Relative Importance Index (RII) barrier ranking across Criticality Tiers 1, 2, and 3.}
+\label{fig:tam_hierarchy}
+\end{figure}
 
 As illustrated in Figure~\ref{fig:tam_hierarchy}(b), the digital literacy gap ($\text{RII} = 0.862$) and initial retrofit capital expenditure ($\text{RII} = 0.844$) constitute Tier 1 roadblocks. Table~\ref{tab:mitigation_framework} synthesizes actionable managerial strategies to resolve each empirical barrier.
 
-\begin{table*}[t]
+\begin{table}[!htbp]
 \centering
 \small
 \caption{Managerial mitigation framework addressing empirical technology adoption roadblocks.}
@@ -401,7 +411,7 @@ As illustrated in Figure~\ref{fig:tam_hierarchy}(b), the digital literacy gap ($
 \textbf{Guest Privacy Fears} & Privacy \& Trust (PT) & Install optical-blind passive infrared (PIR) and thermal motion sensors strictly; enforce a zero-camera/zero-microphone hardware policy prominently communicated on keycard jackets. \\
 \bottomrule
 \end{tabularx}
-\end{table*}
+\end{table}
 
 \section{CONCLUSION AND MANAGERIAL IMPLICATIONS}
 

@@ -1,0 +1,5 @@
+,MAE,RMSE,MAPE_%,R2
+Moving_Average_7D,24.53,42.36,35.32,0.7823
+Ridge_Regression,17.65,24.54,37.76,0.9269
+LightGBM,18.39,30.66,93.63,0.8859
+GradientBoosting,18.95,31.02,85.04,0.8833

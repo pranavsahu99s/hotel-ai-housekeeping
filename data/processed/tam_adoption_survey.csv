@@ -1,0 +1,33 @@
+respondent_id,role,property_category,years_hospitality_experience,PU1_workload_transparency,PU2_turnaround_efficiency,PU3_cost_reduction,PEOU1_intuitive_interface,PEOU2_staff_training_ease,CC1_high_initial_iot_cost,CC2_unclear_short_term_roi,TR1_fear_of_worker_surveillance,TR2_digital_literacy_gap,PT1_guest_privacy_concerns,PT2_cloud_vendor_lock_in
+RESP_01,Executive Housekeeper,Independent Boutique,16,4,4,4,4,3,5,3,4,5,4,2
+RESP_02,Maintenance/IT Lead,Luxury Resort (5-Star),12,5,4,4,3,2,3,5,4,4,4,4
+RESP_03,General Manager,Luxury Resort (5-Star),18,4,4,4,3,3,4,3,4,3,3,3
+RESP_04,Operations Manager,International Brand (4-Star),16,3,3,4,5,3,4,4,3,3,3,2
+RESP_05,Executive Housekeeper,Domestic Chain (India),4,5,4,4,4,3,4,4,3,4,4,4
+RESP_06,Executive Housekeeper,Independent Boutique,10,5,5,3,3,2,4,4,4,4,4,3
+RESP_07,Executive Housekeeper,International Brand (4-Star),12,4,4,4,5,3,5,3,5,3,3,3
+RESP_08,General Manager,Domestic Chain (India),4,4,4,3,5,3,4,3,3,5,2,3
+RESP_09,Operations Manager,Independent Boutique,15,4,4,5,4,3,4,5,4,5,3,3
+RESP_10,General Manager,Domestic Chain (India),11,5,4,4,2,2,5,5,4,5,4,4
+RESP_11,Executive Housekeeper,Independent Boutique,14,4,5,5,3,3,3,5,4,5,2,4
+RESP_12,Maintenance/IT Lead,Luxury Resort (5-Star),22,4,4,4,3,4,4,3,5,3,4,3
+RESP_13,General Manager,Domestic Chain (India),20,4,5,5,4,3,4,3,3,3,4,2
+RESP_14,Executive Housekeeper,International Brand (4-Star),11,5,4,5,2,4,5,3,3,3,4,4
+RESP_15,Executive Housekeeper,Domestic Chain (India),6,4,4,3,2,3,4,4,3,5,4,3
+RESP_16,Executive Housekeeper,Domestic Chain (India),6,5,4,4,4,3,4,3,3,5,5,2
+RESP_17,Executive Housekeeper,Domestic Chain (India),4,5,4,4,2,3,4,5,5,5,3,2
+RESP_18,Operations Manager,Independent Boutique,8,4,5,5,2,3,4,3,4,5,3,2
+RESP_19,Operations Manager,Luxury Resort (5-Star),13,5,4,4,5,4,5,5,3,4,4,3
+RESP_20,Executive Housekeeper,International Brand (4-Star),10,4,4,3,2,2,4,4,4,5,5,4
+RESP_21,Operations Manager,Luxury Resort (5-Star),12,4,4,4,4,3,5,5,4,5,4,4
+RESP_22,Executive Housekeeper,Luxury Resort (5-Star),10,3,4,5,4,3,5,3,4,5,3,4
+RESP_23,Executive Housekeeper,Domestic Chain (India),12,5,5,4,3,3,4,4,4,5,4,2
+RESP_24,Executive Housekeeper,Luxury Resort (5-Star),11,5,5,3,5,2,4,4,4,5,5,4
+RESP_25,Operations Manager,Independent Boutique,15,5,4,5,5,4,4,3,4,4,3,4
+RESP_26,General Manager,Independent Boutique,5,5,3,4,3,3,5,3,2,4,4,2
+RESP_27,Executive Housekeeper,Independent Boutique,4,4,4,4,3,2,4,5,4,4,4,4
+RESP_28,Operations Manager,Domestic Chain (India),19,4,3,5,4,4,4,4,4,4,4,3
+RESP_29,Operations Manager,Domestic Chain (India),8,4,4,4,4,3,5,3,5,4,4,3
+RESP_30,Executive Housekeeper,Domestic Chain (India),6,4,4,4,5,4,4,4,5,5,3,3
+RESP_31,Operations Manager,International Brand (4-Star),15,4,4,3,3,2,4,4,4,4,3,2
+RESP_32,Executive Housekeeper,Domestic Chain (India),11,5,5,4,3,3,4,4,3,5,3,3

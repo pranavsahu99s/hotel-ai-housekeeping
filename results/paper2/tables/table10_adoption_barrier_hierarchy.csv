@@ -1,0 +1,7 @@
+Rank,Barrier_Description,Mean_Rating,RII,Criticality_Tier
+1,Digital Literacy Gap among Housekeeping Crew,4.31,0.862,Tier 1 (Severe Roadblock)
+2,High Upfront IoT Hardware / Retrofit Cost,4.22,0.844,Tier 1 (Severe Roadblock)
+3,Unclear Short-Term ROI / Payback Timeline,3.84,0.769,Tier 2 (Moderate Roadblock)
+4,Staff Anxiety over Continuous Performance Surveillance,3.81,0.762,Tier 2 (Moderate Roadblock)
+5,Guest Privacy Concerns Regarding In-Room Sensors,3.62,0.725,Tier 2 (Moderate Roadblock)
+6,Vendor Lock-In and Cloud Service Reliability,3.06,0.612,Tier 3 (Minor Concern)

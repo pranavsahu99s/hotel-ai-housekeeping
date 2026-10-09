@@ -1,0 +1,8 @@
+,Mean,Std,95%_CI_Lower,95%_CI_Upper
+Baseline_CPOR,15.44,1.56,13.29,19.59
+AI_Optimized_CPOR,14.79,1.84,12.19,19.45
+CPOR_Reduction,0.65,0.38,0.13,1.37
+Annual_Cost_Savings_Pct,4.39,2.73,0.69,9.68
+Annual_Net_Savings,22367.0,14923.33,3059.79,53083.75
+Payback_Period_Months,16.52,16.98,3.26,56.47
+ROI_3_Year_Pct,365.98,310.9,-36.25,1005.91

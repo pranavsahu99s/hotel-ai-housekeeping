@@ -1,0 +1,10 @@
+{
+  "silhouette_score": 0.2416,
+  "n_clusters": 4,
+  "cluster_distribution": {
+    "Business Short-Stay": 5083,
+    "Family High-Intensity": 3978,
+    "Luxury High-Touch": 3323,
+    "Eco-Conscious Minimalist": 2553
+  }
+}

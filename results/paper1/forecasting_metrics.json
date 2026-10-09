@@ -1,0 +1,26 @@
+{
+  "Moving_Average_7D": {
+    "MAE": 24.53,
+    "RMSE": 42.36,
+    "MAPE_%": 35.32,
+    "R2": 0.7823
+  },
+  "Ridge_Regression": {
+    "MAE": 17.65,
+    "RMSE": 24.54,
+    "MAPE_%": 37.76,
+    "R2": 0.9269
+  },
+  "LightGBM": {
+    "MAE": 18.39,
+    "RMSE": 30.66,
+    "MAPE_%": 93.63,
+    "R2": 0.8859
+  },
+  "GradientBoosting": {
+    "MAE": 18.95,
+    "RMSE": 31.02,
+    "MAPE_%": 85.04,
+    "R2": 0.8833
+  }
+}

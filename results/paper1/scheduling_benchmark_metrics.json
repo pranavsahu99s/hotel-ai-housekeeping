@@ -1,0 +1,47 @@
+{
+  "makespan_min": {
+    "Baseline_Mean": 492.83,
+    "Baseline_Std": 14.62,
+    "OR_Tools_Mean": 461.47,
+    "OR_Tools_Std": 14.32,
+    "Improvement_%": 6.36,
+    "p_value": "2.9036e-29",
+    "statistically_significant": true
+  },
+  "total_overtime_min": {
+    "Baseline_Mean": 491.07,
+    "Baseline_Std": 114.55,
+    "OR_Tools_Mean": 323.97,
+    "OR_Tools_Std": 114.7,
+    "Improvement_%": 34.03,
+    "p_value": "2.7863e-60",
+    "statistically_significant": true
+  },
+  "staff_utilization_pct": {
+    "Baseline_Mean": 93.44,
+    "Baseline_Std": 0.72,
+    "OR_Tools_Mean": 99.79,
+    "OR_Tools_Std": 0.1,
+    "Improvement_%": 6.8,
+    "p_value": "1.5895e-29",
+    "statistically_significant": true
+  },
+  "sla_breach_pct": {
+    "Baseline_Mean": 3.89,
+    "Baseline_Std": 3.44,
+    "OR_Tools_Mean": 0.89,
+    "OR_Tools_Std": 2.31,
+    "Improvement_%": 77.15,
+    "p_value": "2.3793e-07",
+    "statistically_significant": true
+  },
+  "avg_turnaround_time_min": {
+    "Baseline_Mean": 287.0,
+    "Baseline_Std": 8.39,
+    "OR_Tools_Mean": 289.44,
+    "OR_Tools_Std": 9.74,
+    "Improvement_%": -0.85,
+    "p_value": "1.0394e-06",
+    "statistically_significant": true
+  }
+}

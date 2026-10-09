@@ -1,0 +1,23 @@
+# Dependencies for AI/IoT Smart Hotel Housekeeping Management Research System
+# Compatible with Python 3.10 and 3.11
+
+# Core Scientific & Data Processing
+numpy>=1.26.0
+pandas>=2.2.0
+scipy>=1.12.0
+
+# Machine Learning & Optimization
+scikit-learn>=1.4.0
+lightgbm>=4.3.0
+ortools>=9.9.0
+simpy>=4.1.0
+
+# Publication Data Visualization (300 DPI)
+matplotlib>=3.8.0
+seaborn>=0.13.0
+tabulate>=0.9.0
+
+# Serving & Interactive Decision Dashboard
+fastapi>=0.110.0
+uvicorn>=0.28.0
+streamlit>=1.32.0

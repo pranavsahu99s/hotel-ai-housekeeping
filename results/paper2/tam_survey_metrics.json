@@ -1,0 +1,52 @@
+{
+  "n_respondents": 32,
+  "constructs": [
+    {
+      "Construct": "Perceived_Usefulness (PU)",
+      "Item_Count": 3,
+      "Mean_Rating (1-5)": 4.18,
+      "Std_Dev": 0.61,
+      "Cronbach_Alpha": 0.057,
+      "Psychometric_Reliability": "Questionable"
+    },
+    {
+      "Construct": "Perceived_Ease_of_Use (PEOU)",
+      "Item_Count": 2,
+      "Mean_Rating (1-5)": 3.25,
+      "Std_Dev": 0.85,
+      "Cronbach_Alpha": 0.435,
+      "Psychometric_Reliability": "Questionable"
+    },
+    {
+      "Construct": "Capital_Cost_Constraints (CC)",
+      "Item_Count": 2,
+      "Mean_Rating (1-5)": 4.03,
+      "Std_Dev": 0.68,
+      "Cronbach_Alpha": -0.714,
+      "Psychometric_Reliability": "Questionable"
+    },
+    {
+      "Construct": "Staff_Tech_Resistance (TR)",
+      "Item_Count": 2,
+      "Mean_Rating (1-5)": 4.06,
+      "Std_Dev": 0.76,
+      "Cronbach_Alpha": 0.093,
+      "Psychometric_Reliability": "Questionable"
+    },
+    {
+      "Construct": "Privacy_Trust_Concerns (PT)",
+      "Item_Count": 2,
+      "Mean_Rating (1-5)": 3.34,
+      "Std_Dev": 0.78,
+      "Cronbach_Alpha": 0.171,
+      "Psychometric_Reliability": "Questionable"
+    }
+  ],
+  "top_barrier": {
+    "Rank": 1,
+    "Barrier_Description": "Digital Literacy Gap among Housekeeping Crew",
+    "Mean_Rating": 4.31,
+    "RII": 0.862,
+    "Criticality_Tier": "Tier 1 (Severe Roadblock)"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "Lexicon_Rule_Baseline": {
+    "Accuracy": 0.7724,
+    "Macro_F1": 0.47,
+    "Precision_Macro": 0.47
+  },
+  "TFIDF_Ngram_LinearSVM": {
+    "Accuracy": 0.8568,
+    "Macro_F1": 0.6844,
+    "Precision_Macro": 0.6844
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Median_Benchmark": {
+    "MAE": 10.0,
+    "RMSE": 12.98,
+    "R2": -0.0039
+  },
+  "Random_Forest": {
+    "MAE": 8.98,
+    "RMSE": 11.6,
+    "R2": 0.1982
+  },
+  "Gradient_Boosting": {
+    "MAE": 9.43,
+    "RMSE": 12.43,
+    "R2": 0.0795
+  }
+}

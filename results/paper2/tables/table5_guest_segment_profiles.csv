@@ -1,0 +1,5 @@
+Cluster_ID,Segment_Name,Sample_Share_%,Mean_Rating,Cleanliness_Sensitivity,Linen_Sensitivity,Service_Sensitivity
+0,Eco-Conscious Minimalist,17.1,1.69,0.37,0.43,0.47
+1,Business Short-Stay,34.0,4.44,0.43,0.19,0.4
+2,Family High-Intensity,26.6,4.25,1.0,0.32,0.58
+3,Luxury High-Touch,22.2,4.37,0.0,0.44,0.74

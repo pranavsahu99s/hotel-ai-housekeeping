@@ -1,0 +1,24 @@
+# Python Virtual Environment
+.venv/
+venv/
+env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Raw bulk datasets (downloadable via src/data_pipeline/fetch_data.py)
+data/raw/*.csv
+
+# Log files and OS caches
+*.log
+.DS_Store
+.directory
+Thumbs.db
+
+# Jupyter / IDE caches
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.~lock.*

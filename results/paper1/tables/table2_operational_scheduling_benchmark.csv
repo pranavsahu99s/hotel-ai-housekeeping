@@ -1,0 +1,6 @@
+,Baseline_Mean,Baseline_Std,OR_Tools_Mean,OR_Tools_Std,Improvement_%,p_value,statistically_significant
+makespan_min,492.83,14.62,461.47,14.32,6.36,2.9036e-29,True
+total_overtime_min,491.07,114.55,323.97,114.7,34.03,2.7863e-60,True
+staff_utilization_pct,93.44,0.72,99.79,0.1,6.8,1.5895e-29,True
+sla_breach_pct,3.89,3.44,0.89,2.31,77.15,2.3793e-07,True
+avg_turnaround_time_min,287.0,8.39,289.44,9.74,-0.85,1.0394e-06,True

@@ -1,0 +1,6 @@
+Barrier_Rank,Empirical_Barrier,Theoretical_Construct,Recommended_Mitigation
+1,High Upfront IoT Hardware / Retrofit Cost,Cost Constraints (CC),Phased pilot deployment starting with high-turnover floors; Hardware-as-a-Service (HaaS) subscription leasing to convert CapEx into OpEx.
+2,Digital Literacy Gap among Housekeeping Crew,Tech Resistance (TR),Icon-based multilingual smartphone PWA; color-coded room status; zero-text input workflows requiring minimal training.
+3,Staff Anxiety over Continuous Performance Surveillance,Tech Resistance (TR),Transparent co-design with labor representatives; decoupling task completion analytics from punitive disciplinary measures; gamified reward incentives.
+4,Unclear Short-Term ROI / Payback Timeline,Cost Constraints (CC),"Presenting empirical 10,000-run Monte Carlo 95% CI payback models (demonstrating 14-18 month breakeven) to property owners."
+5,Guest Privacy Concerns Regarding In-Room Sensors,Privacy & Trust (PT),Optical-blind thermal / PIR passive infrared motion sensors only; strict zero-camera/zero-microphone hardware policy prominently communicated on keycard jackets.

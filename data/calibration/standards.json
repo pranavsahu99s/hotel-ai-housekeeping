@@ -1,0 +1,81 @@
+{
+  "cleaning_standards": {
+    "source": "ISSA 540 Cleaning Times & AHLA/HFTP Housekeeping Productivity Benchmarks",
+    "durations_minutes": {
+      "stayover": {
+        "standard": {"mean": 22.0, "std": 3.5, "min": 15.0, "max": 35.0},
+        "suite": {"mean": 32.0, "std": 4.5, "min": 22.0, "max": 48.0},
+        "eco_opt_out": {"mean": 8.0, "std": 2.0, "min": 5.0, "max": 14.0}
+      },
+      "checkout": {
+        "standard": {"mean": 38.0, "std": 5.0, "min": 25.0, "max": 55.0},
+        "suite": {"mean": 55.0, "std": 7.0, "min": 38.0, "max": 80.0}
+      },
+      "deep_clean": {
+        "standard": {"mean": 52.0, "std": 6.5, "min": 35.0, "max": 75.0},
+        "suite": {"mean": 75.0, "std": 9.0, "min": 50.0, "max": 105.0}
+      }
+    }
+  },
+  "economic_standards": {
+    "source_india": "Federation of Hotel & Restaurant Associations of India (FHRAI) & National Career Service (NCS) 2024",
+    "source_us": "US Bureau of Labor Statistics (BLS) Occupational Employment and Wage Statistics (OEWS) 37-2012",
+    "india": {
+      "currency": "INR",
+      "currency_symbol": "₹",
+      "base_hourly_wage": 140.0,
+      "overtime_multiplier": 1.5,
+      "supply_cost_per_checkout": 45.0,
+      "supply_cost_per_stayover": 22.0,
+      "supply_cost_eco_clean": 5.0,
+      "iot_retrofit_cost_per_room": 4500.0,
+      "annual_software_maintenance_per_room": 450.0,
+      "electricity_cost_per_kwh": 8.50,
+      "water_cost_per_kiloliter": 65.0
+    },
+    "international_usd": {
+      "currency": "USD",
+      "currency_symbol": "$",
+      "base_hourly_wage": 18.50,
+      "overtime_multiplier": 1.5,
+      "supply_cost_per_checkout": 3.80,
+      "supply_cost_per_stayover": 1.90,
+      "supply_cost_eco_clean": 0.40,
+      "iot_retrofit_cost_per_room": 120.0,
+      "annual_software_maintenance_per_room": 15.0,
+      "electricity_cost_per_kwh": 0.16,
+      "water_cost_per_kiloliter": 4.20
+    }
+  },
+  "environmental_standards": {
+    "source_energy": "India Bureau of Energy Efficiency (BEE) Star Rating & NYC Local Law 84 Hotel Benchmarks",
+    "source_water": "Cornell Center for Hospitality Research (CHR) Sustainability Benchmarks",
+    "source_emissions": "Central Electricity Authority (CEA) CO2 Baseline Database v19 & US EPA eGRID 2024",
+    "baselines": {
+      "energy_kwh_per_occupied_room_night": 18.50,
+      "water_liters_per_occupied_room_night": 350.0,
+      "laundry_liters_per_checkout_clean": 65.0,
+      "laundry_liters_per_stayover_clean": 38.0,
+      "chemical_detergent_ml_per_checkout": 120.0,
+      "chemical_detergent_ml_per_stayover": 55.0
+    },
+    "smart_reductions": {
+      "hvac_setback_during_cleaning_kwh": 1.65,
+      "iot_eco_stayover_energy_saved_kwh": 2.80,
+      "towel_linen_reuse_water_saved_liters": 72.0,
+      "microfiber_smart_dosing_chemical_reduction_pct": 0.42
+    },
+    "emission_factors": {
+      "india_grid_kg_co2_per_kwh": 0.716,
+      "us_grid_kg_co2_per_kwh": 0.385,
+      "water_treatment_kg_co2_per_kiloliter": 1.82
+    }
+  },
+  "shift_constraints": {
+    "shift_duration_hours": 8.0,
+    "paid_break_minutes": 60,
+    "max_regular_hours_per_day": 7.0,
+    "max_overtime_hours_per_day": 2.0,
+    "target_room_credits_per_shift": 15.0
+  }
+}

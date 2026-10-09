@@ -1,0 +1,44 @@
+{
+  "Baseline_CPOR": {
+    "Mean": 15.44,
+    "Std": 1.56,
+    "95%_CI_Lower": 13.29,
+    "95%_CI_Upper": 19.59
+  },
+  "AI_Optimized_CPOR": {
+    "Mean": 14.79,
+    "Std": 1.84,
+    "95%_CI_Lower": 12.19,
+    "95%_CI_Upper": 19.45
+  },
+  "CPOR_Reduction": {
+    "Mean": 0.65,
+    "Std": 0.38,
+    "95%_CI_Lower": 0.13,
+    "95%_CI_Upper": 1.37
+  },
+  "Annual_Cost_Savings_Pct": {
+    "Mean": 4.39,
+    "Std": 2.73,
+    "95%_CI_Lower": 0.69,
+    "95%_CI_Upper": 9.68
+  },
+  "Annual_Net_Savings": {
+    "Mean": 22367.0,
+    "Std": 14923.33,
+    "95%_CI_Lower": 3059.79,
+    "95%_CI_Upper": 53083.75
+  },
+  "Payback_Period_Months": {
+    "Mean": 16.52,
+    "Std": 16.98,
+    "95%_CI_Lower": 3.26,
+    "95%_CI_Upper": 56.47
+  },
+  "ROI_3_Year_Pct": {
+    "Mean": 365.98,
+    "Std": 310.9,
+    "95%_CI_Lower": -36.25,
+    "95%_CI_Upper": 1005.91
+  }
+}

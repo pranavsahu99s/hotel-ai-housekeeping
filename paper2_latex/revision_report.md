@@ -4,7 +4,7 @@
 **Project:** Smart Hotel Housekeeping Analytics & Optimization  
 **Target Manuscript:** `EcoHouse-AI: Paper 2 (Guest Experience, Sustainability & Technology Adoption)`  
 **Source Path:** `paper2_latex/paper2.tex`  
-**Compiled Document:** `paper2_latex/paper2.pdf` (16 Pages, A4, Times Roman typography, 0 build errors)  
+**Compiled Document:** `paper2_latex/paper2.pdf` (17 Pages, A4, Times Roman typography, 0 build errors)  
 **Date of Audit & Release:** October 9, 2026  
 
 ---
@@ -16,7 +16,7 @@
 | **Abstract Word Count** | **241 words** | Exactly 200–250 words | **PASSED** | Covers: problem trilemma, NLP & ML methodology, verified datasets, and supported carbon/TAM results. |
 | **Keywords Count** | **5 keywords** | Exactly 4–6 keywords | **PASSED** | Non-generic keywords: *Aspect-Based Sentiment Analysis*, *Sustainable Hospitality Operations*, *Building Energy Benchmarking*, *Carbon Abatement*, *Technology Acceptance Model*. |
 | **Reference Count** | **30 references** | Exactly 30 references | **PASSED** | 100% verified against Crossref and publisher digital libraries; 30 in-text citations mapping 1-to-1 to bibliography. |
-| **Compiled Pages** | **16 pages** | Publication-grade layout | **PASSED** | Clean build via Tectonic engine (0 errors, auto-fitting `tabularx` and `resizebox` tables, vector PDF graphics). |
+| **Compiled Pages** | **17 pages** | Publication-grade layout | **PASSED** | Clean build via Tectonic engine (0 errors, auto-fitting `tabularx` and `resizebox` tables, vector PDF graphics, 0 blank gaps). |
 
 ---
 
@@ -91,13 +91,16 @@ Every quantitative metric reported in `paper2.tex` has been validated against th
 
 ---
 
-## 4. Figure Placement & Inline Layout Verification
+## 4. Figure & Table Placement & Inline Layout Verification
 
-All three visual artifacts are anchored inline directly within their respective analytical narrative sections via the `float` package (`[H]` non-floating placement and relaxed page fractions), eliminating float deferral to the end of the document:
+All three visual artifacts and nine empirical tables are anchored inline directly within their respective analytical narrative sections via the `float` package (`[H]` non-floating placement for Section 4 and `flafter` top-floating placement for Section 2), eliminating float deferral and orphan page gaps:
 
-- **Figure 1 (Page 9):** `Guest intelligence and aspect-based sentiment framework` (`figure4_aspect_sentiment_radar.pdf`) — Placed inline within Section 4.2 immediately following Table 3 (Guest segment profiles) and preceding Table 4 (Personalization rules).
-- **Figure 2 (Page 11):** `Environmental conservation and carbon abatement ledger` (`figure5_carbon_resource_abatement.pdf`) — Placed inline within Section 4.3 immediately following Table 6 (Carbon abatement ledger) and preceding Section 4.4.
-- **Figure 3 (Page 12):** `TAM/UTAUT adoption governance and RII hierarchy` (`figure6_tam_barrier_hierarchy.pdf`) — Placed inline within Section 4.4 immediately following Table 8 (Adoption barrier hierarchy) and preceding Table 9 (Managerial mitigation framework).
+- **Table 1 (Page 4):** `Comparative literature review matrix` — Placed at the top of Page 4, seamlessly introduced by Section 2 on Page 3 and followed by Sections 2.3 and 2.4.
+- **Table 2 & Figure 1 (Pages 8–9):** `NLP sentiment benchmark` and `Aspect-based sentiment radar` (`figure4_aspect_sentiment_radar.pdf`) — Placed strictly inline within Section 4.1, immediately paired with granular polarity extraction and promptness timing failure analysis ($-0.2628$).
+- **Tables 3 & 4 (Pages 9–10):** `Guest segment profiles` and `Dynamic personalization matrix` — Placed strictly inline within Section 4.2, detailing the four discovered personas and their operational laundry/service frequency rules.
+- **Tables 5, 6 & Figure 2 (Pages 11–12):** `Building energy regression`, `Carbon abatement ledger`, and `Environmental conservation efficiency chart` (`figure5_carbon_resource_abatement.pdf`) — Placed strictly inline within Section 4.3, detailing EUI predictions and regional carbon divergence across Indian CEA and US EPA grids.
+- **Tables 7, 8, 9 & Figure 3 (Pages 12–14):** `TAM construct reliability`, `RII barrier hierarchy chart` (`figure6_tam_barrier_hierarchy.pdf`), and `Managerial mitigation framework` — Placed strictly inline within Section 4.4, providing systematic prioritization of adoption roadblocks and actionable socio-technical governance strategies.
+- **References [1]–[30] (Pages 16–17):** Completely formatted in IEEE style across two balanced pages with zero trailing orphan lines.
 
 ---
 
